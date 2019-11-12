@@ -1,0 +1,2 @@
+webpackJsonp([1],{aB7K:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var l={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"xxtd"},[this._v("\n  学习天地\n")])},staticRenderFns:[]},s=n("C7Lr")(null,l,!1,null,null,null);t.default=s.exports}});
+//# sourceMappingURL=1.529c043512f3d02de457.js.map
