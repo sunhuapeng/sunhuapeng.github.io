@@ -23,7 +23,7 @@
     <p style="display:none">获取时间戳Date.parse(new Date());</p>
 </html>
 <html>
-    <p class="id" style="display:none;">1573611204000</p>
+    <p class="id" style="display:none;">1573611204110</p>
 </html>
 <html>
     <p class="brief" style="display:none;">测试自动评论issue</p>
