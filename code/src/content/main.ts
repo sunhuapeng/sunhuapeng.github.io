@@ -79,7 +79,7 @@ const render = () => {
     renderer.render(scene, camera);
     if (isStart) {
         vehicleUpdate && vehicleUpdate()
-        // followCamera()
+        followCamera()
     }
 }
 

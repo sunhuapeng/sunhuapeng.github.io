@@ -15,7 +15,7 @@ export let scene: THREE.Scene,
 
 export const init = () => {
     scene = new THREE.Scene()
-    scene.add(new THREE.AxesHelper(50))
+    // scene.add(new THREE.AxesHelper(50))
     const canvas = document.getElementsByClassName('3dCanvas')
 
     if (canvas) {
