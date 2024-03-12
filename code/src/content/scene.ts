@@ -36,7 +36,6 @@ export const init = () => {
 
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.2, 2000000);
     camera.position.copy(cameraPos)
-    controls =  new OrbitControls(camera, renderer.domElement);
     initLight()
 
     
