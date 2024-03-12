@@ -1,4 +1,4 @@
-import { Mesh, Object3D, Quaternion, Vector3, Matrix4 } from "../../node_modules/@types/three";
+import { Mesh, Object3D, Quaternion, Vector3, Matrix4 } from "three";
 import { ConvexObjectBreaker } from 'three/examples/jsm/misc/ConvexObjectBreaker'
 
 

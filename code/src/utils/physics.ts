@@ -5,7 +5,7 @@
  * @param rigidBodies 存放刚体的数组
  */
 
-import { Object3D, Vector3 } from "../../node_modules/@types/three";
+import { Object3D, Vector3 } from "three";
 
 const gravityConstant = 17.8; // 重力常数
 

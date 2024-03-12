@@ -4,7 +4,7 @@ import { createRigidBody, setPointerBttVec, } from '../utils/rigidBody';
 import { castShadow } from '../utils/shadow';
 import { createVehicle, vehicleUpdate } from './createVehicle';
 import { init, renderer, scene, camera, light } from './scene'
-import * as THREE from '../../node_modules/@types/three'
+import * as THREE from 'three'
 import { getBox3Info, getRandomInt } from './utils'
 import { changeMeshPos, createLetter, createMesh } from './createLetter';
 const rigidBodies: THREE.Object3D[] = []; // 刚体

@@ -1,4 +1,4 @@
-import * as THREE from '../../../node_modules/@types/three'
+import * as THREE from 'three'
 import { v3MaxLine } from '../createLetter';
 
 export const getBox3Info = (mesh: THREE.Object3D) => {
