@@ -6,18 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>threejs案例</title>
-    <link rel="stylesheet" href="../src/public.module.less">
     
-  <script type="module" crossorigin src="/assets/index-734452f9.js"></script>
-  <link rel="stylesheet" href="/assets/index-9648ecb7.css">
+    
+  <script type="module" crossorigin src="/assets/index-1d9071ff.js"></script>
+  <link rel="stylesheet" href="/assets/index-d14f4499.css">
 </head>
 <script>
     window.movingDraw = true;
 </script>
-<body>
-    <div id="container"></div>
-</body>
 
+<body>
+    <canvas class="3dCanvas"></canvas>
+    <div class="css2d"></div>
+    <div class="css3d"></div>
+    <div class="loading">
+        <h1>车借你，不要把它玩坏了</h1>
+        <div class="startBtn">开始</div>
+    </div>
+</body>
+<script src="./node_modules/three/examples/jsm/libs/ammo.wasm.js"></script>
+<script>
+    window.Ammo = Ammo
+</script>
 
 
 </html>
