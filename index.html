@@ -8,25 +8,45 @@
     <title>threejs案例</title>
     
     
-  <script type="module" crossorigin src="/assets/index-651adf70.js"></script>
-  <link rel="stylesheet" href="/assets/index-e564714f.css">
+    <script type="text/javascript"
+        src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=HuHxXgGTCgKqusDO6FqSsC4EUeQqpKGx"></script>
+
+  <script type="module" crossorigin src="/assets/index-f906e090.js"></script>
+  <link rel="stylesheet" href="/assets/index-74db4e97.css">
 </head>
 <script>
     window.movingDraw = true;
 </script>
 
 <body>
-    <canvas class="3dCanvas"></canvas>
-    <div class="css2d"></div>
-    <div class="loading">
-        <h1>车借你，不要把它玩坏了</h1>
-        <div class="startBtn">开始</div>
-    </div>
-</body>
-<script src="https://three-statices.oss-cn-hangzhou.aliyuncs.com/physics-scene/ammo.wasm.js"></script>
-<script>
-    window.Ammo = Ammo
-</script>
+    <div id="allmap"></div>
+    <div id="r-result">
+        <div class="handle-area">
+            <span>搜索标注点：<input id="suggestId" type="text" placeholder="请输入关键字" /></span>
+            <span>
+                <Button id="distanceHaversine">使用Haversine计算距离</Button>
+                <Button id="distanceVincenty">使用Vincenty计算距离</Button>
+                
+            </span>
+            <Button id="drawLine">绘制曲线</Button>
+            <Button>清空标注</Button>
+            <span>
+                <label for="complete">缩放地图</label>
+                <input type="checkbox" id="complete" name="complete" checked value="1">
+            </span>
 
+        </div>
+
+    </div>
+    <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+    <div id="latlngs">
+
+    </div>
+
+</body>
+
+<script>
+
+</script>
 
 </html>
