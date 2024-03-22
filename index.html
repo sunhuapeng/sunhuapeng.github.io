@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>threejs案例</title>
+    <title>高德地图案例</title>
     
     
     <script type="text/javascript"
         src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=HuHxXgGTCgKqusDO6FqSsC4EUeQqpKGx"></script>
-
-  <script type="module" crossorigin src="/assets/index-3c418689.js"></script>
-  <link rel="stylesheet" href="/assets/index-74db4e97.css">
+        <script type="text/javascript" src="//mapopen.cdn.bcebos.com/github/BMapGLLib/DistanceTool/src/DistanceTool.min.js"></script>
+  <script type="module" crossorigin src="/assets/index-b9ef3525.js"></script>
+  <link rel="stylesheet" href="/assets/index-94f91e55.css">
 </head>
 <script>
     window.movingDraw = true;
@@ -26,13 +26,19 @@
             <span>
                 <Button id="distanceHaversine">使用Haversine计算距离</Button>
                 <Button id="distanceVincenty">使用Vincenty计算距离</Button>
-
+                <label for="unit" id="unitVal" value="km">单位</label>
+                <select id="unit" name="unit">
+                    <option value="km">公里(km)</option>
+                    <option value="mile">英里(mile)</option>
+                </select>
             </span>
             <Button id="drawLine">绘制曲线</Button>
+            <Button id="distanceToolOpen">开启百度测距</Button>
+            <Button id="distanceToolClose" >esc关闭百度测距</Button>
             <Button id="clear">清空标注</Button>
             <span>
                 <label for="complete">缩放地图</label>
-                <input type="checkbox" id="complete" name="complete" checked value="1">
+                <input type="checkbox" id="complete" name="complete"  value="1">
             </span>
 
         </div>
