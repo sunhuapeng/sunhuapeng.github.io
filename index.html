@@ -5,53 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>计算经纬度距离</title>
+    <title>three--塔防游戏</title>
     
     
-    <script type="text/javascript"
-        src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=HuHxXgGTCgKqusDO6FqSsC4EUeQqpKGx"></script>
-        <script type="text/javascript" src="//mapopen.cdn.bcebos.com/github/BMapGLLib/DistanceTool/src/DistanceTool.min.js"></script>
-  <script type="module" crossorigin src="/assets/index-b9ef3525.js"></script>
-  <link rel="stylesheet" href="/assets/index-94f91e55.css">
+  <script type="module" crossorigin src="/assets/index-b21a4e2d.js"></script>
+  <link rel="stylesheet" href="/assets/index-879a9dc9.css">
 </head>
-<script>
-</script>
-
+<script src="./src/assets/js/astar.js"></script>
 <body>
-    <div id="allmap"></div>
-    <div id="r-result">
-        <div class="handle-area">
-            <span>搜索标注点：<input id="suggestId" type="text" placeholder="请输入关键字" /></span>
-            <span>
-                <Button id="distanceHaversine">使用Haversine计算距离</Button>
-                <Button id="distanceVincenty">使用Vincenty计算距离</Button>
-                <label for="unit" id="unitVal" value="km">单位</label>
-                <select id="unit" name="unit">
-                    <option value="km">公里(km)</option>
-                    <option value="mile">英里(mile)</option>
-                </select>
-            </span>
-            <Button id="drawLine">绘制曲线</Button>
-            <Button id="distanceToolOpen">开启百度测距</Button>
-            <Button id="distanceToolClose" >esc关闭百度测距</Button>
-            <Button id="clear">清空标注</Button>
-            <span>
-                <label for="complete">缩放地图</label>
-                <input type="checkbox" id="complete" name="complete"  value="1">
-            </span>
-
-        </div>
-
+    <canvas class="main3d"></canvas>
+    <div class="handleArea">
+        <button id="crossbow">
+            <!-- 十字弓 -->
+        </button>
+        <button id="rifle">
+            <!-- 大炮 -->
+        </button>
+        <button id="upgrade">
+            <!-- 升级 -->
+        </button>
+        <button id="dispose">
+            <!-- 销毁 -->
+        </button>
+        <button id="box3Helper">
+            <!-- 观察线 -->
+        </button>
+        <button id="stop">
+            <!-- 暂停 -->
+        </button>
     </div>
-    <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
-    <div id="latlngs">
-
+    <div class="explain">
+        <p id="moeny"></p>
+        <p class="money"></p>
+        <p>第<span id="level">1</span>关</p>
+        
     </div>
-
 </body>
 
-<script>
 
-</script>
 
 </html>
