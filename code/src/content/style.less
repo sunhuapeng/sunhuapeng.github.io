@@ -1,0 +1,133 @@
+#main3d {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.handleArea {
+  position: fixed;
+  bottom: 0;
+  height: 400px;
+  right: 0;
+  top: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+// 放置时候显示在地板上的辅助
+
+.floor-helper {
+  width: 1px;
+  height: 1px;
+  background: #73abff;
+  pointer-events: none !important;
+  opacity: 0.5;
+}
+.css3d {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.explain {
+  width: 100%;
+  height: 36px;
+  background: #cccccc;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 999;
+  p {
+    display: inline-block;
+  }
+}
+body {
+  cursor: url(../assets/images/T_Mouse.png), pointer;
+}
+.handleArea {
+  button {
+    cursor: url(../assets/images/T_Mouse.png), auto;
+    width: 64px;
+    height: 64px;
+    border: none;
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: null;
+    margin-top: 20px;
+  }
+  #crossbow {
+    background-image: url(../assets/images/other/axe1.png);
+  }
+  #rifle {
+    background-image: url(../assets/images/other/axe.png);
+  }
+  #upgrade {
+    background-image: url(../assets/images/64/tools.png);
+  }
+  #dispose {
+    background-image: url(../assets/images/64/x.png);
+  }
+  #box3Helper {
+    background-size: 60% 60%;
+    background-position: center;
+    background-image: url(../assets/images/other/cube.png);
+  }
+  #stop {
+    background-size: 60% 60%;
+    background-position: center;
+    background-image: url(../assets/images/other/zanting.png);
+    &.start {
+      background-image: url(../assets/images/other/24gl-pause2.png);
+    }
+  }
+}
+
+.explain {
+  display: flex;
+  align-items: center;
+  & > * {
+    margin-right: 46px;
+  }
+  .money-box {
+    display: flex;
+    align-items: center;
+  }
+}
+#moeny {
+  background: url(../assets/images/64/coin.png) no-repeat;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.level-text {
+  color: #000;
+  background: #fff;
+}
+
+#message_total {
+  width: 100%;
+  height: 42px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 42px;
+}
+
+[class^='message_'] {
+  z-index: 999;
+}
+.message_error {
+  background:  red;
+}
+.message_success {
+  background:  green;
+}

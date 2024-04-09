@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tower Defense Kit
+* source:	https://sketchfab.com/3d-models/tower-defense-kit-8d54cda4e7674245b9b067943e2e7cd1
+* author:	anton.kuhlevskyi (https://sketchfab.com/anton.kuhlevskyi)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tower Defense Kit" (https://sketchfab.com/3d-models/tower-defense-kit-8d54cda4e7674245b9b067943e2e7cd1) by anton.kuhlevskyi (https://sketchfab.com/anton.kuhlevskyi) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

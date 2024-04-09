@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/mac/.pyenv/shims:/Users/mac/.pyenv/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/mac/.pyenv/bin:/usr/local/sbin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  18.19.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: connect ECONNREFUSED 192.168.4.133:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+
+npm manifest: 
+  {
+    "name": "vite-project",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "devDependencies": {
+      "typescript": "^5.0.2",
+      "vite": "^4.3.2"
+    },
+    "dependencies": {
+      "@amap/amap-jsapi-loader": "^1.0.1",
+      "@turf/turf": "^6.5.0",
+      "@tweenjs/tween.js": "^20.0.3",
+      "@types/three": "0.162.0",
+      "axios": "^1.4.0",
+      "dayjs": "^1.11.10",
+      "less": "^4.1.3",
+      "lil-gui": "^0.18.1",
+      "lodash": "^4.17.21",
+      "three": "0.162.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
