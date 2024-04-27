@@ -21,6 +21,7 @@ const params = {
         fileInput.type = 'file';
         fileInput.addEventListener('change', (event) => {
             runFlag = []
+            points = []
             const file = event.target.files[0];
             // 在这里对选择的图片进行处理
             imgObj.src = URL.createObjectURL(file);
@@ -54,12 +55,13 @@ var getImgColors = (pixelData, width, height) => {
     let col = 0
     let flagRow = -1
     let flagCol = -1
-    console.log('standardColor', standardColor);
+    console.log('standardColor',standardColor);
     for (let i = 0; i < (pixelData.length / limit); i++) {
         const r = pixelData[i * limit + 0]
         const g = pixelData[i * limit + 1]
         const b = pixelData[i * limit + 2]
         // 获取色差
+       
         const diff = distance([r, g, b])
         const flag = diff <= params.colorDeff // 可通行标志
         col++
@@ -112,6 +114,7 @@ let drawRect = (x, y, w, h, color) => {
 var distance = function (color) {
     var i,
         d = 0;
+       
     for (i = 0; i < color.length; i++) {
         d += (color[i] - standardColor[i]) * (color[i] - standardColor[i]);
     }
@@ -212,16 +215,17 @@ const createGui = () => {
 
 let flag = ''
 const chooseStart = () => {
-    getImgDataInfo()
+    // getImgDataInfo()
     flag = 'start'
 }
 const chooseEnd = () => {
-    getImgDataInfo()
+    // getImgDataInfo()
     flag = 'end'
 }
 
 if (cvs) {
     cvs.addEventListener('click', (e) => {
+        getImgDataInfo()
         const x = Math.floor(e.offsetX / params.accuracy)
         const y = Math.floor(e.offsetY / cvs.height * runFlag[x].length)
         drawRect(e.offsetX, e.offsetY, 6, 6, 'green')
