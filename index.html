@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./static/style/font.css" />
-  </head>
-  <body>
-    <div class="menu-list">
-      <ul>
-        <li class="menu"><span class="iconfont">&#xe641;</span></li>
-        <li class="market"><span class="iconfont">&#xe87d;</span></li>
-        <li class="floor"><span class="iconfont">&#xe642;</span></li>
-        <li class="member"><span class="iconfont">&#xe629;</span></li>
-        <li class="trail"><span class="iconfont">&#xe617;</span></li>
-        <li class="handle-btn"><span class="iconfont">&#xe67e;</span></li>
-      </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>threejs案例</title>
+    
+    
+  <script type="module" crossorigin src="/assets/index-1bf27765.js"></script>
+  <link rel="stylesheet" href="/assets/index-e17d7938.css">
+</head>
+<script>
+    window.movingDraw = true;
+</script>
+
+<body>
+    <canvas class="3dCanvas"></canvas>
+    <div class="css2d"></div>
+    <div class="css3d"></div>
+    <ul class="btns">
+        <li id="clipping">切割动画</li>
+        <li id="lineBtn">线稿动画</li>
+        <li id="packingBtn">外壳透明度动画</li>
+        <li id="expandMotorBtn">展开齿轮</li>
+        <li id="motorLightBtn">发光线条</li>
+        <li id="allActions">一镜到底</li>
+    </ul>
+    <div class="loading">
+        <p>正在加载模型...</p>
     </div>
-    <div class="massage-box">
-      <div class="handle-show">
-        <div class="show-close">
-          <img src="./static/image/close.png" alt="" />
-        </div>
-        <div class="show-main">
-         
-        </div>
-      </div>
-    </div>
-  <script type="text/javascript" src="three.bundle.js"></script></body>
+</body>
+
+
 </html>
