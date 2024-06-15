@@ -5,15 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>canvas-map</title>
-  <script type="module" crossorigin src="/assets/index-f0f77e83.js"></script>
+    <title>threejs案例</title>
+    
+    
+  <script type="module" crossorigin src="/assets/index-5814c2d2.js"></script>
+  <link rel="stylesheet" href="/assets/index-c296bee5.css">
 </head>
+<script>
+    window.movingDraw = true;
+</script>
 
 <body>
-    <canvas id="cvs" width="1024" height="768" style="border:1px solid #ccc;margin:20px auto;display: block;">
-    </canvas>
-</body>
-<script src="https://three-statices.oss-cn-hangzhou.aliyuncs.com/canvas-map/js/astar.js"></script>
+    <canvas class="3dCanvas"></canvas>
+    <div class="page-title">
+        <div class="name">径向气动发动机物联系统</div>
+        <div class="time">
+            <div class="nyr"></div>
+            <div class="sj"></div>
+        </div>
+    </div>
 
-<script>cosnole.log("gengxinle ")</script>
+    <div class="css3d"></div>
+
+    <div class="loading">
+        <p>正在加载模型...</p>
+    </div>
+    <div class="left-echarts">
+        <div>
+            <div class="title">
+                <p>01</p>
+                <div>
+                    <p>Created by Sun Huapeng</p>
+                    <p>性能监测</p>
+                </div>
+            </div>
+            <div id="echarts1"></div>
+        </div>
+        <div>
+            <div class="title">
+                <p>02</p>
+                <div>
+                    <p>Created by Sun Huapeng</p>
+                    <p>轴承使用率（次数）</p>
+                </div>
+            </div>
+            <div id="echarts2"></div>
+        </div>
+
+        <div id="alerts">
+            <div class="title">
+                <p>03</p>
+                <div>
+                    <p>Created by Sun Huapeng</p>
+                    <p>发动机警报</p>
+                </div>
+            </div>
+            <ul>
+                <li class="li-item">
+                    <p>齿轮1号磨损严重</p>
+                    <p>未读</p>
+                </li>
+                <li class="li-item">
+                    <p>涡轮垫片老化，需及时更换</p>
+                    <p>已读</p>
+                </li>
+                <li class="li-item">
+                    <p>四号爪盘齿轮机油缺失</p>
+                    <p>已读</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-charts">
+        <div>
+            <div class="title">
+                <p>04</p>
+                <div>
+                    <p>Created by Sun Huapeng</p>
+                    <p>零件状态检测</p>
+                </div>
+            </div>
+            <ul>
+
+            </ul>
+        </div>
+        <div>
+            <div class="title">
+                <p>05</p>
+                <div>
+                    <p>Created by Sun Huapeng</p>
+                    <p>配件状态检测</p>
+                </div>
+            </div>
+            <ul>
+
+            </ul>
+        </div>
+
+    </div>
+    <ul class="btns">
+        <li id="expand">拆解动画</li>
+        <li id="retract">还原动画</li>
+        <li id="checked">自动检测</li>
+    </ul>
+    
+</body>
+<script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/echarts.min.js"></script>
+
+
+
 </html>
