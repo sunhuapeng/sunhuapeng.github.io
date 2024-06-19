@@ -8,29 +8,38 @@
     <title>threejs案例</title>
     
     
-  <script type="module" crossorigin src="/assets/index-593a0e2a.js"></script>
-  <link rel="stylesheet" href="/assets/index-e17d7938.css">
+  <script type="module" crossorigin src="/assets/index-22a6eb8c.js"></script>
+  <link rel="stylesheet" href="/assets/index-f0bed176.css">
 </head>
-<script>
-    window.movingDraw = true;
-</script>
 
 <body>
-    <canvas class="3dCanvas"></canvas>
-    <div class="css2d"></div>
-    <div class="css3d"></div>
-    <ul class="btns">
-        <li id="clipping">切割动画</li>
-        <li id="lineBtn">线稿动画</li>
-        <li id="packingBtn">外壳透明度动画</li>
-        <li id="expandMotorBtn">展开齿轮</li>
-        <li id="motorLightBtn">发光线条</li>
-        <li id="allActions">一镜到底</li>
-    </ul>
-    <div class="loading">
-        <p>正在加载模型...</p>
+    <!-- <canvas class="3dCanvas"></canvas>
+
+    <div class="css3d"></div> -->
+
+
+    <div class="socket-div">
+        <div class="me-id">
+            <div class="label">我方id</div>
+            <p></p>
+        </div>
+        <div class="other-id">
+            <div class="label">被呼叫方id</div>
+            <input type="text">
+        </div>
     </div>
+
+
+    <button class="call-user-btn">向另一方打电话</button>
+    <button class="call-again-btn">再次发送消息</button>
+    <!-- <div class="loading">
+        <p>正在加载模型...</p>
+    </div> -->
 </body>
+
+<script>
+    var global = window
+</script>
 
 
 </html>
