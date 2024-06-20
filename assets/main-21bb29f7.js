@@ -1,1 +1,0 @@
-import"./server-501095f8.js";window.onload=async()=>{const e=document.querySelector("input"),o=document.querySelector("button"),t=document.querySelector(".text");e&&o&&t&&o.addEventListener("click",()=>{console.log(e.value)})};
