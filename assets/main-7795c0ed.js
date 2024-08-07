@@ -1,1 +1,0 @@
-import{c,m as e}from"./index-b7e4cd42.js";window.onload=async()=>{const o=document.querySelector("#create-QR-code");o&&o.addEventListener("click",()=>{c(`${window.location.protocol}//${window.location.hostname}/src/h5/index.html?callid=${e}`)})};
