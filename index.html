@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="/umi.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>threejs案例</title>
+  
+  
+  <script type="module" crossorigin src="/assets/index-9a641a52.js"></script>
+  <link rel="stylesheet" href="/assets/index-bb692d48.css">
 </head>
+<script>
+</script>
+
 <body>
-<div id="root"></div>
-<script src="/umi.js"></script>
+  <div id="container"></div>
+  <div class="drawHandlePlane">
+    <button id="draw">开始绘制</button>
+    <button id="continue" style="display: none;">继续编辑</button>
+    <button id='save' style="display: none;">保存绘制</button>
+    <button id="burrow" style="display: none;">挖洞</button>
+  </div>
+  <div class="gameHandlePlane">
+    <button id="start">开始游戏</button>
+  </div>
+  <div class="blaceBgi">正在等待鼠阵营躲藏...</div>
+  <div class="gameTime"></div>
+  <div class="speed">
+    <Button class="target">定向抓捕</Button>
+    <Button class="speed1">X1</Button>
+    <Button class="speed5">X5</Button>
+    <Button class="speed10">X20</Button>
+    <p>当前倍数：X1</p>
+  </div>
+  <ul class="mvp">
+  </ul>
 </body>
+
+
+
 </html>
